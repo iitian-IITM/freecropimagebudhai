@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUDHAI CROP IMAGE</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <div class="background" id="particles-js"></div>
+    <header>
+        <div class="logo">BUDHAI CROP IMAGE</div>
+        <nav>
+            <!-- <ul>
+                <li><a href="#rectangular">Rectangular Crop</a></li>
+                <li><a href="#square">Square Crop</a></li>
+                <li><a href="#circular">Circular Crop</a></li>
+                <li><a href="#ellipse">Ellipse Crop</a></li>
+                <li><a href="#panorama">Panorama Crop</a></li>
+                <li><a href="#custom">Custom Aspect Ratio Crop</a></li>
+                <li><a href="#filters">Filters</a></li>
+            </ul> -->
+        </nav>
+        <div class="theme-toggle">
+            <input type="checkbox" id="toggleTheme">
+            <label for="toggleTheme">🌙</label>
+        </div>
+    </header>
+
+    <main>
+    <section class="upload-crop-section" id="uploadCropSection">
+        <h2>Upload and Crop Image (Free to Use!)</h2>
+        <div class="upload-area" id="uploadArea">
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+            <label for="imageUpload" class="upload-label">Click or Drag to Upload an Image</label>
+        </div>
+        
+        <div id="cropSection" style="display: none;">
+            <div id="cropArea">
+                <img id="image" src="" alt="Uploaded Image" />
+                <div id="guidelines" style="display:none;"></div>
+            </div>
+            <div class="crop-options">
+                <button id="cropButton">Crop Image</button>
+                <button id="undoButton">Undo</button>
+                <button id="redoButton">Redo</button>
+                <button id="uploadAnotherButton">Upload Another Image</button>
+                <select id="aspectRatioSelect">
+                    <option value="1">1:1</option>
+                    <option value="16/9">16:9</option>
+                    <option value="4/3">4:3</option>
+                    <option value="custom">Custom Aspect Ratio</option>
+                </select>
+            </div>
+            <canvas id="resultCanvas" style="display:none;"></canvas>
+            <a id="downloadButton" style="display:none;">Download Cropped Image</a>
+        </div>
+    </section>
+
+    <section class="description">
+        <h3><i class="fas fa-cut"></i> How to Use BUDHAI CROP IMAGE</h3>
+        <div class="feature">
+            <i class="fas fa-file-upload"></i>
+            <div>
+                <strong>Upload Images:</strong><br>
+                Click or drag to upload your images easily.
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fas fa-crop-alt"></i>
+            <div>
+                <strong>Crop with Ease:</strong><br>
+                Adjust the crop area and preview in real time.
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fas fa-download"></i>
+            <div>
+                <strong>Download Your Image:</strong><br>
+                Save your high-quality cropped images instantly.
+            </div>
+        </div>
+
+        <h3>Features</h3>
+        <div class="feature">
+            <i class="fas fa-check"></i>
+            <div>
+                <strong>Free to Use:</strong><br>
+                Enjoy all features without any cost.
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fas fa-eye"></i>
+            <div>
+                <strong>Real-Time Preview:</strong><br>
+                See changes as you adjust the cropping.
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fas fa-user-shield"></i>
+            <div>
+                <strong>Your Privacy:</strong><br>
+                All images are processed locally and securely.
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <footer>
+        <p>&copy; 2024 BUDHAI CROP IMAGE. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="/scripts.js"></script>
+    <script src="/particles.js"></script>
+
+    
+</body>
+</html>
